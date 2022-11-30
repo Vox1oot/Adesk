@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFmaily;
+}
+
+.header {
+  &__content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+
+    &-left {
+      height: 24px;
+      width: 12px;
+      background-image: url('../icons/Vector-left.svg');
+      background-repeat: no-repeat;
+    }
+    &-right {
+      position: relative;
+      left: -0.6px;
+      height: 24px;
+      width: 13px;
+      background-image: url('../icons/Vector-right.svg');
+      background-repeat: no-repeat;
+    }
+    &-name {
+      height: 18px;
+      width: 71px;
+      background-image: url('../icons/Adesk.svg');
+      background-repeat: no-repeat;
+      margin-left: 9px;
+    }
+  }
+
+  &__buttons {
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  &__button-login {
+    border: 1px solid rgba(5, 21, 52, 0.3);
+    background: #FFFFFF;
+    margin-right: 10px;
+
+    &:hover {
+      background: $colorPrimary;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+
+  &__button-registration {
+    background: #0F8FF9;
+    border: none;
+    color: $colorWhite;
+
+    &:hover {
+      box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+      color: $colorWhite;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.menu {
+  margin-left: 70px;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $colorMenu;
+  }
+}
