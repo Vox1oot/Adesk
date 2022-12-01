@@ -1,5 +1,62 @@
 @media screen and (max-width: 375px) {
-  .header__buttons {
-    display: none;
+  .header {
+    &__buttons {
+      display: none;
+      position: absolute;
+      top: 70px;
+      padding: 0;
+    }
+
+    &__button-login {
+      margin: 0;
+      width: 100%;
+      border: none;
+    }
+
+    &__button-registration {
+      width: 100%;
+      background-color: transparent;
+      color: $colorMenu;
+    }
+
+    &__content {
+      height: 70px;
+    }
+
+    &__burger {
+      display: block;
+      position: fixed;
+      right: 26px;
+      width: 30px;
+      height: 20px;
+
+      span {
+        background-color: $colorBurger;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 50px;
+        left: 0;
+        top: 9px
+      }
+
+      &::before, &::after {
+        content: '';
+        background-color: $colorBurger;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 50px;
+        left: 0;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
   }
 }
