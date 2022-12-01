@@ -3,6 +3,7 @@
     &__buttons {
       display: none;
       position: absolute;
+      width: 100%;
       top: 70px;
       padding: 0;
     }
@@ -10,13 +11,19 @@
     &__button-login {
       margin: 0;
       width: 100%;
+      background-color: $colorPrimary;
       border: none;
+      border-radius: 0;
+      color: $colorWhite;
     }
 
     &__button-registration {
       width: 100%;
-      background-color: transparent;
+      background-color: $colorPrimary;
       color: $colorMenu;
+      border: none;
+      border-radius: 0;
+      color: $colorWhite;
     }
 
     &__content {

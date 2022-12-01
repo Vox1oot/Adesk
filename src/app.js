@@ -1,11 +1,5 @@
 const toggleBurger = (burgerElement, buttonsElement) => {
-  burgerElement.addEventListener('click', () => {
-    if (buttonsElement.style.display !== 'block') {
-      buttonsElement.style.display = 'block';
-      return;
-    }
-    buttonsElement.style.display = 'none';
-  });
+  /* придумать как навешать стили на бургер чтобы он не ломал верстку */
 }
 
 export default () => {
