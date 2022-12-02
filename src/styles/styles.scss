@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $fontFmaily;
+  font-family: $fontFamily;
 }
 
 .grid {
@@ -20,24 +20,64 @@ li {
 a {
   text-decoration: none;
   color: $colorMenu;
+  margin-left: 30px;
+}
+
+.pink {
+  background-color: $colorPink;
+  color: $colorLight;
+}
+
+.green {
+  background-color: $colorGreen;
+  color: $colorLight;
+}
+
+.primary {
+  background-color: $colorPrimary;
+  color: $colorLight;
+}
+
+.login {
+  background-color: $colorLight;
+  border: 1px solid rgba(5, 21, 52, 0.3);
 }
 
 .btn {
-  padding: 12px 20px;
   border-radius: 4px;
   font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+
+  &-test {
+    width: 100%;
+  }
+
+  &_default {
+    background-color: $colorLight;
+    border: 1px solid rgba(5, 21, 52, 0.3);
+  }
+}
+
+.mr {
+  &-10 {
+    margin-right: 10px;
+  }
 }
 
 .header {
   &__content {
     padding: 0px 30px;
-    grid-template-columns: 10% 60% 30%;
-    max-height: 80px;
+    grid-template-columns: repeat(12, 1fr);
+    height: 80px;
+    font-size: 18px;
   }
 
   &__logo {
+    grid-column: 1 / 2;
     justify-content: center;
     align-items: center;
+
     .left {
       display: inline-block;
       width: 12px;
@@ -67,14 +107,144 @@ a {
   }
 
   &__menu {
+    grid-column: 2 / 10;
+
     .list {
-      flex-grow: 1;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: start;
     }
   }
 
   &__buttons {
-    justify-content: space-evenly;
+    grid-column: 10 / -1;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
+.main {
+
+  &__container {
+    margin: auto;
+    max-width: $maxWithContainer + px;
+  }
+
+}
+
+.title {
+  max-width: 946px;
+  text-align: center;
+  margin: 150px auto 100px;
+
+  &__h1 {
+    font-family: $fontBlack;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71.5px;
+    padding-bottom: 20px;
+  }
+
+  &__description {
+    padding: 0 10px;
+    font-size: 22px;
+    line-height: 150%;
+  }
+}
+
+.tariffs {
+  padding: 100px 10px 200px;
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 267px;
+    height: 700px;
+
+    &:first-child {
+      background-color: #FFF0F7;
+    }
+
+    &:nth-child(2) {
+      background-color: #EAFFEE;
+    }
+
+    &:nth-child(3) {
+      background-color: #F0FCFF;
+    }
+    
+    &:nth-child(4) {
+      background-color: #F9F9F9;
+    }
+  }
+}
+
+.tariffs-item {
+  padding: 35px 25px 25px 25px;
+  background-color: red;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  &__cost {
+    font-family: "Graphik LCG Black";
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0em;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "в месяц при оплате за год";
+      display: block;
+      font-family: "Graphik LCG";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      color: rgba(5, 21, 52, 0.5);
+    }
+  }
+
+  &__information-users {
+    margin-bottom: 8px;
+  }
+
+  &__information-companies {
+    margin-bottom: 15px;
+  }
+}
+
+.perks {
+  margin-bottom: 40px;
+
+  &__item {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-bottom: 8px;
+
+    &::before {
+      margin-right: 6px;
+      content: url("../icons/Checkmark.svg");
+    }
+
+    &_hidden {
+      color: rgba(5, 21, 52, 0.25);
+
+      &::before {
+        margin-right: 6px;
+        content: url("../icons/Dash.svg");
+      }
+    }
   }
 }
