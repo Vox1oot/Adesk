@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .tariffs__item {
+    width: 344px;
+  }
+
+  .choice {
+    &__content {
+      text-align: center;
+      margin: 0;
+    }
+
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__picture {
+      margin-bottom: 37px;
+    }
+  }
+
+  .consultation {
+    padding: 0;
+  }
+
+  .answer__content {
+    padding: 30px 0px 0px 5px;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-container {
+    .logo {
+      width: 100%;
+    }
+  }
+
+  .socials {
+    width: 200px;
+    position: relative;
+    top: -415px;
+    right: 68px;
+  }
+}

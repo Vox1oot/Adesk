@@ -28,7 +28,6 @@ li {
 a {
   text-decoration: none;
   color: $colorMenu;
-  margin-left: 30px;
 }
 
 .pink {
@@ -74,18 +73,20 @@ a {
   &-10 {
     margin-right: 10px;
   }
+  &-24 {
+    margin-right: 24px;
+  }
 }
 
 .header {
   &__content {
     padding: 0px 30px;
-    grid-template-columns: repeat(12, 1fr);
+    justify-content: space-between;
     height: 80px;
     font-size: 18px;
   }
 
   &__logo {
-    grid-column: 1 / 2;
     justify-content: center;
     align-items: center;
 
@@ -118,16 +119,18 @@ a {
   }
 
   &__menu {
-    grid-column: 2 / 10;
+    flex-grow: 3;
 
     .list {
       align-items: center;
       justify-content: start;
+      justify-content: space-evenly;
+      flex-grow: 1;
     }
   }
 
   &__buttons {
-    grid-column: 10 / -1;
+    flex-grow: 5;
     justify-content: end;
     align-items: center;
   }
@@ -168,6 +171,7 @@ a {
   &__container {
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -194,7 +198,6 @@ a {
 
 .tariffs-item {
   padding: 35px 25px 25px 25px;
-  background-color: red;
 
   &__title {
     font-size: 20px;
@@ -390,7 +393,7 @@ a {
 
   &__container {
     margin: 0 auto;
-    width: $maxWithContainer + px;
+    max-width: $maxWithContainer + px;
   }
 }
 
