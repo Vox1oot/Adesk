@@ -5,6 +5,14 @@
   font-family: $fontFamily;
 }
 
+.light {
+  color: $colorLight;
+}
+
+.hidden {
+  display: none;
+}
+
 .grid {
   display: grid;
 }
@@ -56,6 +64,9 @@ a {
   &_default {
     background-color: $colorLight;
     border: 1px solid rgba(5, 21, 52, 0.3);
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -245,6 +256,182 @@ a {
         margin-right: 6px;
         content: url("../icons/Dash.svg");
       }
+    }
+  }
+}
+
+.choice {
+  padding: 0 100px 0 100px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    margin-left: 56px;
+  }
+
+  &__title {
+    font-family: $fontBlack;
+    font-size: 35px;
+    line-height: 110%;
+  }
+
+  &__description {
+    margin: 15px 0 32px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.consultation {
+  margin: 130px 5px;
+  padding: 190px 120px;
+  text-align: center;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 755px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 110%;
+  }
+
+  &__perks {
+    margin: 50px 150px 50px 150px;
+  }
+
+  &__item {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__number {
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    background: #EAEAEA;
+
+    .number {
+      font-weight: 900;
+      color: #555A64;
+    }
+  }
+
+  &__description {
+    text-align: start;
+    margin-left: 19px;
+    font-size: 22px;
+    line-height: 150%;
+  }
+
+  &__btn {
+    padding: 18px 28px;
+    background: #051534;
+    color: $colorLight;
+  }
+}
+
+.questions {
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 110%;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding: 0px 10px;
+  }
+
+  &__btn {
+    border-radius: 0px 12px 12px 12px;
+
+    &:hover {
+      background-color: #0072EC;
+    }
+  }
+}
+
+.questions {
+  &__item {
+    margin-top: 10px;
+  }
+}
+
+.answer {
+  &__content {
+    padding: 30px 30px 30px 200px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__avatar {
+    padding-top: 30px;
+  }
+}
+
+.footer {
+  padding-top: 80px;
+  width: auto;
+  background-color: $colorFooter;
+
+  &__container {
+    margin: 0 auto;
+    width: $maxWithContainer + px;
+  }
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__p {
+    max-width: 208px;
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  &__column {
+    margin-left: 24px;
+    color: #8394B5;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__cards {
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__information {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .information {
+      flex-grow: 3;
+    }
+
+    .socials {
+      flex-grow: 1;
+      justify-content: space-between;
     }
   }
 }
