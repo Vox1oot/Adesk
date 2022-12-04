@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack server",
     "build": "webpack",
-    "clear": "rd /s /q dist"
+    "clear": "rm -r dist/"
   },
   "repository": {
     "type": "git",

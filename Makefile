@@ -3,6 +3,6 @@ install:
 start:
 	npm start
 build:
-	npm build
+	npm run build
 clear:
-	npm clear
+	npm run clear
