@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .header__menu {
     display: none;
   }
@@ -36,15 +36,120 @@
   }
 
   .footer-container {
+    position: relative;
+
     .logo {
       width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__cards {
+      display: none;
+    }
+
+    &__information {
+      flex-wrap: wrap;
     }
   }
 
+  .information {
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 20px 20px;
+  }
+
   .socials {
+    position: absolute;
     width: 200px;
-    position: relative;
-    top: -415px;
-    right: 68px;
+    top: 7px;
+    right: 34px;
   }
 }
+
+@media screen and (max-width: 707px) {
+  .tariffs {
+    padding: 0 10px 100px;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .header {
+    &__button-burger {
+      display: block;
+    }
+
+    &__content {
+      padding: 0px 15px;
+    }
+
+    &__buttons {
+      display: none;
+    }
+
+    &__button-burger {
+      margin: auto 0;
+    }
+  }
+
+  .button-burger {
+    border: none;
+    background-color: transparent;
+  }
+
+  .title {
+    padding: 0 20px;
+
+    &__h1 {
+      font-size: 40px;
+      line-height: 115%;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    &__column {
+      margin-bottom: 40px;
+    }
+
+    &__information {
+      flex-flow: wrap-reverse;
+
+      .information {
+        flex-wrap: wrap;
+
+        &__p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .mr-24 {
+      margin-bottom: 0;
+    }
+
+    .socials {
+      position: relative;
+      flex-grow: 0;
+      top: 0;
+      right: 0;
+      left: 20px;
+    }
+  }
+}
+

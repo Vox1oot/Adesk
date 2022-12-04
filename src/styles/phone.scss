@@ -1,0 +1,112 @@
+@media screen and (max-width: 510px) {
+  .header {
+    &__button-burger {
+      display: block;
+    }
+
+    &__content {
+      padding: 0px 15px;
+    }
+
+    &__buttons {
+      display: none;
+    }
+
+    &__button-burger {
+      margin: auto 0;
+    }
+  }
+
+  .button-burger {
+    border: none;
+    background-color: transparent;
+  }
+
+  .title {
+    padding: 0 20px;
+
+    &__h1 {
+      font-size: 40px;
+      line-height: 115%;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  .tariffs {
+    padding: 0 10px 100px;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  .choice {
+    padding: 0;
+  }
+
+  .consultation {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__perks {
+      margin: 0 0 40px 0;
+    }
+
+    &__item {
+      align-items: flex-start;
+    }
+  }
+
+  .questions {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__btn {
+      text-align: left;
+    }
+  }
+/* !! */
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    &__column {
+      margin-bottom: 40px;
+    }
+
+    &__information {
+      flex-flow: wrap-reverse;
+
+      .information {
+        flex-wrap: wrap;
+
+        &__p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .mr-24 {
+      margin-bottom: 0;
+    }
+
+    .socials {
+      position: relative;
+      flex-grow: 0;
+      top: 0;
+      right: 0;
+      left: 20px;
+    }
+  }
+}

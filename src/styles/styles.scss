@@ -129,6 +129,10 @@ a {
     }
   }
 
+  &__button-burger {
+    display: none;
+  }
+
   &__buttons {
     flex-grow: 5;
     justify-content: end;
