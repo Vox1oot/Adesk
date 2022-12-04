@@ -171,6 +171,27 @@ a {
       justify-content: space-evenly;
       flex-grow: 1;
     }
+
+    .menu__link {
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0;
+        height: 3px;
+        background-color: $colorPrimary;
+        transition: width 1s cubic-bezier(0.25, 1, 0.4, 1);
+      }
+
+      &:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
   }
 
   &__button-burger {
